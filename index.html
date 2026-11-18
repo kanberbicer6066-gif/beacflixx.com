@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101010">
+    <meta name="description" content="BFLİX'te öne çıkan film ve dizileri keşfet.">
+    <title>BFLİX — Film ve dizi dünyası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="BFLİX ana sayfa">BF<span>LİX</span></a>
+        <nav class="main-nav" aria-label="Ana menü">
+            <a class="active" href="#">Ana Sayfa</a>
+            <a href="#trendler">Trendler</a>
+            <a href="#filmler">Filmler</a>
+            <a href="#diziler">Diziler</a>
+        </nav>
+        <a class="profile-link" href="#kesfet" aria-label="Keşfet">⌕</a>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow"><span class="eyebrow-mark">B</span> BFLİX ÖZEL</p>
+                <h1 id="hero-title">Geceye<br>bir hikâye yakışır.</h1>
+                <p class="hero-description">Sınırları aşan maceralar, unutulmaz karakterler ve her an yeni bir keşif.</p>
+                <div class="hero-actions">
+                    <a class="button button-light" href="#trendler"><span aria-hidden="true">▶</span> Keşfet</a>
+                    <a class="button button-muted" href="#hakkinda"><span aria-hidden="true">ⓘ</span> Daha Fazla Bilgi</a>
+                </div>
+            </div>
+            <div class="hero-caption"><span class="now-playing"></span> ŞİMDİ ÖNE ÇIKIYOR</div>
+        </section>
+
+        <section class="catalog" id="kesfet" aria-label="Film ve dizi seçkisi">
+            <div class="section-heading" id="trendler">
+                <div>
+                    <p class="section-kicker">BU HAFTANIN SEÇKİSİ</p>
+                    <h2>Trendler <span>şimdi</span></h2>
+                </div>
+                <a class="see-all" href="#filmler">Tümünü gör <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="poster-row">
+                <a class="poster poster-one" href="#hakkinda" aria-label="Kayıp Şehir hakkında daha fazla bilgi">
+                    <span class="poster-number">01</span><span class="poster-copy"><small>BFLİX DİZİSİ</small><strong>KAYIP<br>ŞEHİR</strong><em>Her sır, bir kapı açar.</em></span>
+                </a>
+                <a class="poster poster-two" href="#hakkinda" aria-label="Son Ufuk hakkında daha fazla bilgi">
+                    <span class="poster-number">02</span><span class="poster-copy"><small>YENİ FİLM</small><strong>SON<br>UFUK</strong><em>Her şey yeniden başlar.</em></span>
+                </a>
+                <a class="poster poster-three" href="#hakkinda" aria-label="Derinlik hakkında daha fazla bilgi">
+                    <span class="poster-number">03</span><span class="poster-copy"><small>GERİLİM</small><strong>DERİNLİK</strong><em>Göründüğünden fazlası var.</em></span>
+                </a>
+                <a class="poster poster-four" href="#hakkinda" aria-label="Kuzey Yolu hakkında daha fazla bilgi">
+                    <span class="poster-number">04</span><span class="poster-copy"><small>MACERA</small><strong>KUZEY<br>YOLU</strong><em>Yolun sonu bilinmiyor.</em></span>
+                </a>
+                <a class="poster poster-five" href="#hakkinda" aria-label="Gece Vardiyası hakkında daha fazla bilgi">
+                    <span class="poster-number">05</span><span class="poster-copy"><small>BFLİX DİZİSİ</small><strong>GECE<br>VARDİYASI</strong><em>Şehir hiç uyumaz.</em></span>
+                </a>
+            </div>
+
+            <div class="section-heading second-heading" id="filmler">
+                <div>
+                    <p class="section-kicker">KENDİ DÜNYANI BUL</p>
+                    <h2>Film ve diziler</h2>
+                </div>
+                <span class="collection-note" id="diziler">Her ruh hâline bir hikâye.</span>
+            </div>
+            <div class="category-grid">
+                <a class="category-card category-action" href="#trendler"><span>01 / ADRENALİN</span><strong>Aksiyon</strong><span class="category-arrow">↗</span></a>
+                <a class="category-card category-drama" href="#trendler"><span>02 / DUYGULAR</span><strong>Dram</strong><span class="category-arrow">↗</span></a>
+                <a class="category-card category-mystery" href="#trendler"><span>03 / BİLİNMEYEN</span><strong>Gizem</strong><span class="category-arrow">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="hakkinda">
+        <a class="brand footer-brand" href="#">BF<span>LİX</span></a>
+        <p>İyi hikâyeler burada başlar.</p>
+        <span class="footer-note">© 2026 BFLİX · Kişisel proje</span>
+    </footer>
+
+<section class="beacflix-films">
+    <h2>Eklenen Filmler</h2>
+
+<div class="search-area">
+    <input
+        type="text"
+        id="filmSearch"
+        placeholder="Film veya dizi ara..."
+    >
+</div>
+
+    <div id="homeFilmList" class="film-container"></div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
+</body>
+</html>
